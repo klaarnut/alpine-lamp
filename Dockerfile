@@ -73,6 +73,9 @@ RUN chmod u+x /entry.sh
 
 WORKDIR /var/www/localhost/htdocs/
 
+RUN mkdir -p /app
+RUN ln -s /var/www/localhost/htdocs /app
+
 EXPOSE 80
 EXPOSE 3306
 
